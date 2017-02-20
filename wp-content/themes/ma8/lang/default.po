@@ -1,0 +1,757 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MA8\n"
+"POT-Creation-Date: 2013-08-21 12:14+0530\n"
+"PO-Revision-Date: 2013-08-21 12:14+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../MA8/404.php:5
+msgid "OOPS!!!"
+msgstr ""
+
+#: ../MA8/404.php:6
+msgid "Looks like what you are looking for does not exist."
+msgstr ""
+
+#: ../MA8/404.php:7
+msgid "You can either go back to the homepage"
+msgstr ""
+
+#: ../MA8/404.php:9
+msgid "Back Home"
+msgstr ""
+
+#: ../MA8/404.php:11
+msgid "OR"
+msgstr ""
+
+#: ../MA8/404.php:12
+msgid "Perform another search below."
+msgstr ""
+
+#: ../MA8/author.php:20
+msgid "'s Archive"
+msgstr ""
+
+#: ../MA8/author.php:32
+msgid "Bio:"
+msgstr ""
+
+#: ../MA8/author.php:38
+msgid "Total Posts"
+msgstr ""
+
+#: ../MA8/author.php:57 ../MA8/category.php:10
+msgid "There are no posts or pages to display."
+msgstr ""
+
+#: ../MA8/comments.php:4
+msgid ""
+"This post is password protected. Enter the password to view any comments"
+msgstr ""
+
+#: ../MA8/comments.php:13
+#, php-format
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../MA8/comments.php:28
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../MA8/comments.php:29
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../MA8/comments.php:34
+msgid "Comments are closed."
+msgstr ""
+
+#: ../MA8/comments.php:48
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../MA8/comments.php:49
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../MA8/comments.php:50
+msgid "Cancel Reply"
+msgstr ""
+
+#: ../MA8/comments.php:51
+msgid "Submit"
+msgstr ""
+
+#: ../MA8/comments.php:58
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../MA8/comments.php:64
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: ../MA8/content-post.php:18 ../MA8/content-post.php:82
+msgid "In"
+msgstr ""
+
+#: ../MA8/content-post.php:31
+msgid "Written by"
+msgstr ""
+
+#: ../MA8/content-post.php:37
+msgid "Posts"
+msgstr ""
+
+#: ../MA8/content-post.php:37 ../MA8/template-author.php:35
+msgid "Posts:"
+msgstr ""
+
+#: ../MA8/content-post.php:75
+msgid "Full View"
+msgstr ""
+
+#: ../MA8/content-post.php:80
+msgid "By"
+msgstr ""
+
+#: ../MA8/content-post.php:83
+msgid "Tagged"
+msgstr ""
+
+#: ../MA8/footer.php:4
+msgid "Copyright"
+msgstr ""
+
+#: ../MA8/footer.php:4
+msgid "All rights reserved."
+msgstr ""
+
+#: ../MA8/footer.php:10 ../MA8/header.php:43
+msgid "on Facebook"
+msgstr ""
+
+#: ../MA8/footer.php:13 ../MA8/header.php:46
+msgid "on Twitter"
+msgstr ""
+
+#: ../MA8/footer.php:16 ../MA8/header.php:49
+msgid "on Googleplus"
+msgstr ""
+
+#: ../MA8/functions.php:132
+msgid "Primary Menu"
+msgstr ""
+
+#: ../MA8/functions.php:168
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../MA8/functions.php:180
+msgid "Sidebar"
+msgstr ""
+
+#: ../MA8/functions.php:182
+msgid "Displays on the side of single post and page."
+msgstr ""
+
+#: ../MA8/functions.php:190
+msgid "Left Footer"
+msgstr ""
+
+#: ../MA8/functions.php:192
+msgid "Displays in the bottom left of footer."
+msgstr ""
+
+#: ../MA8/functions.php:200
+msgid "Middle Footer"
+msgstr ""
+
+#: ../MA8/functions.php:202
+msgid "Displays in the middle of footer."
+msgstr ""
+
+#: ../MA8/functions.php:210
+msgid "Right Footer"
+msgstr ""
+
+#: ../MA8/functions.php:212
+msgid "Displays in the bottom right of footer."
+msgstr ""
+
+#: ../MA8/functions.php:232
+msgid "Pingback:"
+msgstr ""
+
+#: ../MA8/functions.php:232 ../MA8/functions.php:259
+msgid "Edit"
+msgstr ""
+
+#: ../MA8/functions.php:248
+#, php-format
+msgid "%1$s%2$s"
+msgstr ""
+
+#: ../MA8/functions.php:254
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../MA8/functions.php:263
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../MA8/functions.php:272
+msgid "Reply <span>&darr;</span>"
+msgstr ""
+
+#: ../MA8/functions.php:295
+msgid "&larr;"
+msgstr ""
+
+#: ../MA8/functions.php:296
+msgid "&rarr;"
+msgstr ""
+
+#: ../MA8/functions.php:319
+msgid "Twitter Profile URL"
+msgstr ""
+
+#: ../MA8/functions.php:320
+msgid "Facebook Profile URL"
+msgstr ""
+
+#: ../MA8/functions.php:321
+msgid "Google Profile URL"
+msgstr ""
+
+#: ../MA8/functions.php:390
+msgid "Support"
+msgstr ""
+
+#: ../MA8/functions.php:392
+msgid "\"<strong>readme.txt</strong>\" file is helpful"
+msgstr ""
+
+#: ../MA8/functions.php:393
+msgid "For support and bug reports:"
+msgstr ""
+
+#: ../MA8/functions.php:395
+msgid "MA8 Support Page"
+msgstr ""
+
+#: ../MA8/functions.php:396
+msgid "WordPress support forum"
+msgstr ""
+
+#: ../MA8/functions.php:398
+msgid ""
+"If you like this theme, I will appreciate if you can rate / review it on "
+"WordPress"
+msgstr ""
+
+#: ../MA8/functions.php:400
+msgid "Rate MA8 at WordPress.org"
+msgstr ""
+
+#: ../MA8/functions.php:402
+msgid ""
+"I will be more than happy to help you. So please let me know about any "
+"problem you face by using the support links above"
+msgstr ""
+
+#: ../MA8/functions.php:403
+msgid ""
+"Before leaving bad rating or review please make sure you use one of the "
+"above methods for reporting issues and give me some time to fix those"
+msgstr ""
+
+#: ../MA8/functions.php:446 ../MA8/functions.php:509
+msgid "There are no posts to display"
+msgstr ""
+
+#: ../MA8/home.php:8 ../MA8/index.php:8 ../MA8/page.php:13 ../MA8/single.php:8
+#: ../MA8/template-blog.php:7
+msgid "There are no posts or pages to display"
+msgstr ""
+
+#: ../MA8/options.php:41
+msgid "1"
+msgstr ""
+
+#: ../MA8/options.php:42
+msgid "2"
+msgstr ""
+
+#: ../MA8/options.php:43
+msgid "3"
+msgstr ""
+
+#: ../MA8/options.php:44
+msgid "4"
+msgstr ""
+
+#: ../MA8/options.php:45
+msgid "5"
+msgstr ""
+
+#: ../MA8/options.php:64
+msgid "Basic Styles"
+msgstr ""
+
+#: ../MA8/options.php:67
+msgid "Typography"
+msgstr ""
+
+#: ../MA8/options.php:68
+msgid ""
+"Adjust body font-size and color. Default values being \"18px\" and "
+"\"#2c3e50\" for size and color respectively."
+msgstr ""
+
+#: ../MA8/options.php:76
+msgid "Logo Uploader"
+msgstr ""
+
+#: ../MA8/options.php:77
+msgid "Upload your logo. This will overide the site title and description."
+msgstr ""
+
+#: ../MA8/options.php:82
+msgid "Link Color"
+msgstr ""
+
+#: ../MA8/options.php:83
+msgid "Choose a color for a link. #e26666 color selected by default."
+msgstr ""
+
+#: ../MA8/options.php:89
+msgid "Link Hover Color"
+msgstr ""
+
+#: ../MA8/options.php:90
+msgid "Choose a color for a link hover. #9e4342 color selected by default."
+msgstr ""
+
+#: ../MA8/options.php:96
+msgid "Header Background Color"
+msgstr ""
+
+#: ../MA8/options.php:97
+msgid ""
+"Choose a color for header background. #e26666 color selected by default."
+msgstr ""
+
+#: ../MA8/options.php:103
+msgid "Menu Dropdown Background Color"
+msgstr ""
+
+#: ../MA8/options.php:104
+msgid ""
+"Choose a color for menu dropdown background. #9e4342 color selected by "
+"default."
+msgstr ""
+
+#: ../MA8/options.php:110
+msgid "Footer Social Icon Color"
+msgstr ""
+
+#: ../MA8/options.php:111
+msgid ""
+"Choose a color for footer social icons. #e26666 color selected by default."
+msgstr ""
+
+#: ../MA8/options.php:117
+msgid "Favicon Uploader"
+msgstr ""
+
+#: ../MA8/options.php:118
+msgid "Upload your favicon."
+msgstr ""
+
+#: ../MA8/options.php:126
+msgid "Social"
+msgstr ""
+
+#: ../MA8/options.php:130
+msgid "Enable Social Links"
+msgstr ""
+
+#: ../MA8/options.php:131
+msgid "Switch social links ON or OFF. Switch it ON by selecting this checkbox."
+msgstr ""
+
+#: ../MA8/options.php:137
+msgid "Facebook Url"
+msgstr ""
+
+#: ../MA8/options.php:138
+msgid "Enter your facebook page/profile url"
+msgstr ""
+
+#: ../MA8/options.php:146
+msgid "Twitter Username"
+msgstr ""
+
+#: ../MA8/options.php:147
+msgid "Enter Twitter username without @"
+msgstr ""
+
+#: ../MA8/options.php:155
+msgid "Google+ Url"
+msgstr ""
+
+#: ../MA8/options.php:156
+msgid "Enter your Google+ page/profile url"
+msgstr ""
+
+#: ../MA8/options.php:167
+msgid "Slider"
+msgstr ""
+
+#: ../MA8/options.php:171
+msgid "Enable Slider"
+msgstr ""
+
+#: ../MA8/options.php:172
+msgid "Switch slider ON or OFF. Switch it ON by selecting this checkbox."
+msgstr ""
+
+#: ../MA8/options.php:178
+msgid "Select a Category"
+msgstr ""
+
+#: ../MA8/options.php:179
+msgid ""
+"Select a category for the slider. Three random posts from the selected "
+"category will be displayed on the front page as slides. The selected "
+"category will automatically be excluded from latest posts on the front page."
+msgstr ""
+
+#: ../MA8/options.php:187
+msgid "Slides Quantity"
+msgstr ""
+
+#: ../MA8/options.php:188
+msgid ""
+"Select the amount of slides to dispaly on the homepage. Default is set to "
+"three."
+msgstr ""
+
+#: ../MA8/options.php:199
+msgid "Front Page"
+msgstr ""
+
+#: ../MA8/options.php:203
+msgid "Enable Latest Posts"
+msgstr ""
+
+#: ../MA8/options.php:204
+msgid "Check here to enable latest posts box."
+msgstr ""
+
+#: ../MA8/options.php:210 ../MA8/options.php:254
+msgid "Title"
+msgstr ""
+
+#: ../MA8/options.php:211
+msgid "Enter title to replace the default \"Latest Posts\"."
+msgstr ""
+
+#: ../MA8/options.php:213
+msgid "Latest Posts"
+msgstr ""
+
+#: ../MA8/options.php:219
+msgid "Number of Posts under Latest Posts"
+msgstr ""
+
+#: ../MA8/options.php:220
+msgid ""
+"Select the number of posts you want to display under latest posts on the "
+"front-page."
+msgstr ""
+
+#: ../MA8/options.php:229
+msgid "Select Blog Posts Page"
+msgstr ""
+
+#: ../MA8/options.php:230
+msgid "This page will be linked to the \"all posts\" button on the front page."
+msgstr ""
+
+#: ../MA8/options.php:238
+msgid "Posts Button Text"
+msgstr ""
+
+#: ../MA8/options.php:239
+msgid "Enter text to replace the default \"All Posts\"."
+msgstr ""
+
+#: ../MA8/options.php:241
+msgid "All Posts"
+msgstr ""
+
+#: ../MA8/options.php:247
+msgid "Enable Top Authors"
+msgstr ""
+
+#: ../MA8/options.php:248
+msgid "Check here to enable top authors box."
+msgstr ""
+
+#: ../MA8/options.php:255
+msgid "Enter title to replace the default \"Top Authors\""
+msgstr ""
+
+#: ../MA8/options.php:257
+msgid "Top Authors"
+msgstr ""
+
+#: ../MA8/options.php:263
+msgid "Number of Authors under Top Authors"
+msgstr ""
+
+#: ../MA8/options.php:264
+msgid ""
+"Select the number of authors you want to display under top authors on the "
+"front-page."
+msgstr ""
+
+#: ../MA8/options.php:273
+msgid "Select Authors List Page"
+msgstr ""
+
+#: ../MA8/options.php:274
+msgid "This page will be linked to the \"more info\" button on the front page."
+msgstr ""
+
+#: ../MA8/options.php:282
+msgid "Authors Button Text"
+msgstr ""
+
+#: ../MA8/options.php:283
+msgid "Enter text to replace the default \"More Info\"."
+msgstr ""
+
+#: ../MA8/options.php:285
+msgid "More Info"
+msgstr ""
+
+#: ../MA8/options.php:291
+msgid "Enable Footer Widgets"
+msgstr ""
+
+#: ../MA8/options.php:292
+msgid "Check here to enable footer widgets box."
+msgstr ""
+
+#: ../MA8/options.php:301
+msgid "Extras"
+msgstr ""
+
+#: ../MA8/options.php:306
+msgid "Enable Meta boxes - Single Post Page"
+msgstr ""
+
+#: ../MA8/options.php:307
+msgid "Check here to enable meta boxes on single post view."
+msgstr ""
+
+#: ../MA8/options.php:313
+msgid "Enable Meta boxes - Archive Pages"
+msgstr ""
+
+#: ../MA8/options.php:314
+msgid "Check here to enable meta boxes on archive pages."
+msgstr ""
+
+#: ../MA8/options.php:320
+msgid "Enable Author Info Box on Single Posts"
+msgstr ""
+
+#: ../MA8/options.php:321
+msgid "Check here to enable author info box on single posts."
+msgstr ""
+
+#: ../MA8/options.php:327
+msgid "Enable Editor Style"
+msgstr ""
+
+#: ../MA8/options.php:328
+msgid ""
+"Check here to enable editor style. It includes the front-end styles into the "
+"post editor screen."
+msgstr ""
+
+#: ../MA8/sidebar.php:5 ../MA8/template-front.php:124
+#: ../MA8/template-front.php:136 ../MA8/template-front.php:147
+msgid "Widget Area"
+msgstr ""
+
+#: ../MA8/sidebar.php:7 ../MA8/template-front.php:125
+#: ../MA8/template-front.php:137 ../MA8/template-front.php:148
+msgid "Install a nice widget"
+msgstr ""
+
+#: ../MA8/template-author.php:9
+msgid "We have "
+msgstr ""
+
+#: ../MA8/template-author.php:16
+msgid "awesome authors"
+msgstr ""
+
+#: ../MA8/template-author.php:35
+msgid " Posts"
+msgstr ""
+
+#: ../MA8/template-author.php:54
+msgid "No one found."
+msgstr ""
+
+#: ../MA8/inc/options-framework.php:182 ../MA8/inc/options-framework.php:183
+#: ../MA8/inc/options-framework.php:412
+msgid "Theme Options"
+msgstr ""
+
+#: ../MA8/inc/options-framework.php:228
+msgid "Clear"
+msgstr ""
+
+#: ../MA8/inc/options-framework.php:229
+msgid "Default"
+msgstr ""
+
+#: ../MA8/inc/options-framework.php:230
+msgid "Select Color"
+msgstr ""
+
+#: ../MA8/inc/options-framework.php:276
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: ../MA8/inc/options-framework.php:308
+msgid "Default options restored."
+msgstr ""
+
+#: ../MA8/inc/options-framework.php:362
+msgid "Options saved."
+msgstr ""
+
+#: ../MA8/inc/options-media-uploader.php:51
+msgid "No file chosen"
+msgstr ""
+
+#: ../MA8/inc/options-media-uploader.php:54
+#: ../MA8/inc/options-media-uploader.php:113
+msgid "Upload"
+msgstr ""
+
+#: ../MA8/inc/options-media-uploader.php:56
+#: ../MA8/inc/options-media-uploader.php:114
+msgid "Remove"
+msgstr ""
+
+#: ../MA8/inc/options-media-uploader.php:59
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: ../MA8/inc/options-media-uploader.php:83
+msgid "View File"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:232
+msgid "No Repeat"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:233
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:234
+msgid "Repeat Vertically"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:235
+msgid "Repeat All"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:248
+msgid "Top Left"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:249
+msgid "Top Center"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:250
+msgid "Top Right"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:251
+msgid "Middle Left"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:252
+msgid "Middle Center"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:253
+msgid "Middle Right"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:254
+msgid "Bottom Left"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:255
+msgid "Bottom Center"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:256
+msgid "Bottom Right"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:269
+msgid "Scroll Normally"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:270
+msgid "Fixed in Place"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:344
+msgid "Normal"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:345
+msgid "Italic"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:346
+msgid "Bold"
+msgstr ""
+
+#: ../MA8/inc/options-sanitize.php:347
+msgid "Bold Italic"
+msgstr ""

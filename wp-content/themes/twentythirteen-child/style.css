@@ -1,0 +1,126 @@
+/*
+ Theme Name:     Twentythirteen Child  
+ Theme URI:      http://mysite.com/ 
+ Description:    My description    
+ Author:         Me                
+ Author URI:     http://mysite.com/ 
+ Template:       twentythirteen     
+ Version:        1.0.0             
+*/
+
+@import url("../twentythirteen/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* hide the nav bar in the page */
+#content .entry-title {
+	display: none;
+	font-size: 1px;
+	padding: 0px;
+	margin: 0px;
+	text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* hide the search box */
+.search-form {
+	display: none;
+}
+
+/* attempted to resize the header to not be so effing large, but fell down wp rabbit hole so gave up*/
+.site-title{
+	display: none;
+}
+
+/*
+
+#masthead.site-header{
+	
+	background: url(‘http://matrix.wpengine.com/wp-content/uploads/2014/01/LH-Yellow-Resized.jpg’) no-repeat scroll top;
+	background-size: 1600px 150px;
+	min-height: 150px;
+	height: 150px;
+}
+*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: sans-serif;
+}
+
+#navbar {
+	background-color: #c40076;
+	
+}
+
+
+.nav-menu li a {
+	color: white;
+}
+
+
+.nav-menu .current_page_item a {
+	color: #ffff98;
+	font-style:  normal;
+	font-weight: 400;
+}
+
+.nav-menu .current_page_ancestor a{
+	color: #ffff98;
+	font-style:  normal;
+	font-weight: 400;
+}
+
+.blurb{
+
+	clear: both;
+	
+}
+
+
+.entry-content img, .entry-summary img, .comment-content img, .widget img {
+	//float: left;
+	width: 250px;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+
+.site-footer{
+	background-color:  #c40076;
+	padding: 0;
+	margin: 0;
+	font-size: 80%;
+}
+
+#colophon {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	box-sizing: border-box;
+	height: 30px;
+	border: none;
+	
+}
+
+.site-footer a {
+	font-size: 80%;
+	color: white;
+	border: none;	
+	padding: 0;
+	margin: 0;
+}
+
+.entry-header, .entry-content, .entry-summary, .entry-meta {
+
+	max-width: 100%;
+	padding: 0 10%;
+}
+.orgs img {
+float: left;
+}
+
+.orgs {
+	min-height: 250px;
+	clear: both;
+}

@@ -1,0 +1,30 @@
+
+/*
+ Theme Name:     Customizr Child  
+ Theme URI:      http://mysite.com/ 
+ Description:    My description    
+ Author:         Me                
+ Author URI:     http://mysite.com/ 
+ Template:       customizr      
+ Version:        1.0.0             
+*/
+
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+
+
+
+.widget-area {
+
+      position: relative;
+  bottom: 50px;
+  }
+ 
+.entry-content{
+	position: relative;
+	display: block;
+	float: left;
+}
