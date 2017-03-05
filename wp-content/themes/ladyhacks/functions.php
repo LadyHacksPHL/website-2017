@@ -35,6 +35,15 @@ function ladyhacks_setup() {
 			'capability'	=> 'edit_posts',
 			'redirect'		=> false
 		));
+	
+		// Global Variables 
+		acf_add_options_page(array(
+			'page_title' 	=> 'Global Variables',
+			'menu_title'	=> 'Global Variables',
+			'menu_slug' 	=> 'global-variables',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		));
 		
 	}
 
