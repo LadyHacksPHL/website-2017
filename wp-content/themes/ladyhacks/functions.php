@@ -16,6 +16,29 @@ if ( ! function_exists( 'ladyhacks_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function ladyhacks_setup() {
+	if( function_exists('acf_add_options_page') ) {
+
+		// Header 
+		acf_add_options_page(array(
+			'page_title' 	=> 'Header',
+			'menu_title'	=> 'Header',
+			'menu_slug' 	=> 'header',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		));
+	
+		// Footer 
+		acf_add_options_page(array(
+			'page_title' 	=> 'Footer',
+			'menu_title'	=> 'Footer',
+			'menu_slug' 	=> 'footer',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		));
+		
+	}
+
+
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
