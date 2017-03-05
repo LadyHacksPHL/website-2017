@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package ladyhacks
+ * @package LadyHacks
  */
 
 ?>
@@ -17,7 +17,7 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ladyhacks' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ladyhacks' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ladyhacks' ), 'ladyhacks', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ladyhacks' ), 'ladyhacks', '<a href="https://automattic.com/" rel="designer">Alex Lash</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package ladyhacks
+ * @package LadyHacks
  */
 
 if ( ! function_exists( 'ladyhacks_posted_on' ) ) :

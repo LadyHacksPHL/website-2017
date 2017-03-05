@@ -1,10 +1,10 @@
 <?php
 /**
- * ladyhacks functions and definitions
+ * LadyHacks functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package ladyhacks
+ * @package LadyHacks
  */
 
 if ( ! function_exists( 'ladyhacks_setup' ) ) :
@@ -47,11 +47,11 @@ function ladyhacks_setup() {
 		
 	}
 
-
+	
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on ladyhacks, use a find and replace
+	 * If you're building a theme based on LadyHacks, use a find and replace
 	 * to change 'ladyhacks' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'ladyhacks', get_template_directory() . '/languages' );

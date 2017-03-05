@@ -1,8 +1,8 @@
 <?php
 /**
- * ladyhacks Theme Customizer
+ * LadyHacks Theme Customizer
  *
- * @package ladyhacks
+ * @package LadyHacks
  */
 
 /**
