@@ -8,7 +8,7 @@
 *.swp
 Thumbs.db
 
-# wordpress specific
+# Wordpress Content
 wp-config.php
 wp-content/uploads/
 wp-content/blogs.dir/
@@ -19,7 +19,7 @@ wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
 
-# wpengine specific
+# WP Engine
 .smushit-status
 .gitattributes
 _wpeprivate
@@ -30,7 +30,7 @@ wp-content/mu-plugins/limit-login-attempts
 wp-content/mu-plugins/wpengine-common
 wp-content/mysql.sql
 
-# wp core (as of 3.4.1)
+# Wordpress Core (as of 3.4.1)
 /db-config.php
 /index.php
 /license.txt

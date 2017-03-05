@@ -17,11 +17,13 @@
 	<div class="entry-content">
 		<?php
 			the_content();
+			if( have_rows('sponsor_group') ) get_template_part( 'template-parts/content', 'sponsor' );
+			if( have_rows('people') ) get_template_part( 'template-parts/content', 'sponsor' );
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ladyhacks' ),
-				'after'  => '</div>',
-			) );
+			// wp_link_pages( array(
+			// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ladyhacks' ),
+			// 	'after'  => '</div>',
+			// ) );
 		?>
 	</div><!-- .entry-content -->
 
