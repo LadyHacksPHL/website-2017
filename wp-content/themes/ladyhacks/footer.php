@@ -11,18 +11,34 @@
 
 ?>
 
+
+</body>
+</html>
+
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<?php 
+			$map = get_field('map', 'option');
+			$form = get_field('contact_form', 'option');
+			echo $form;
+			print_r($location);
+
+			$lat = $map['lat'];
+			$lng = $map['lng'];
+
+			if( !empty($location) ) {
+				echo "<div class='acf-map'>";
+					echo "<div class='marker' data-lat='$lat' data-lng='$lng'></div>";
+				echo "</div>";
+			} 
+
+		?>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ladyhacks' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ladyhacks' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ladyhacks' ), 'ladyhacks', '<a href="https://automattic.com/" rel="designer">Alex Lash</a>' ); ?>
+			
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
-</body>
-</html>

@@ -11,13 +11,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php 
+			the_title( '<h2 class="entry-title">', '</h2>' ); 
+			the_content(); 
+		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
-			the_content();
+			// Sponsors Repeater Field Group
 			if( have_rows('sponsor_group') ) get_template_part( 'template-parts/content', 'sponsor' );
+
+			// People Repeater Field Group
 			if( have_rows('group') ) get_template_part( 'template-parts/content', 'people' );
 
 			// wp_link_pages( array(

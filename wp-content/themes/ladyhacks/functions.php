@@ -47,6 +47,23 @@ function ladyhacks_setup() {
 		
 	}
 
+
+
+	function my_theme_add_scripts() {
+		wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD7f6UW86ohNmrjuXcbgWSgpetkV1paoz8', array(), '3', true );
+		wp_enqueue_script( 'google-map-init', get_template_directory_uri() . '/js/main.js', array(), '0.1', true );
+	}
+ 
+	add_action( 'wp_enqueue_scripts', 'my_theme_add_scripts' );
+	 
+	function my_acf_google_map_api( $api ){
+		$api['key'] = 'AIzaSyD7f6UW86ohNmrjuXcbgWSgpetkV1paoz8';
+		return $api;
+	}
+	 
+	add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+
 	
 	/*
 	 * Make theme available for translation.
@@ -140,6 +157,8 @@ function ladyhacks_scripts() {
 	wp_enqueue_style( 'ladyhacks-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'ladyhacks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
+	// wp_enqueue_script( 'ladyhacks-main', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'ladyhacks-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
