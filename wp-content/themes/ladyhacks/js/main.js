@@ -1,26 +1,29 @@
-
-
-(function($) {
-
 /*
-*  render_map
+*  document ready
 *
-*  This function will render a Google Map onto the selected jQuery element
+*  This function will render each map when the document is ready (page has loaded)
 *
 *  @type	function
 *  @date	8/11/2013
-*  @since	4.3.0
+*  @since	5.0.0
 *
-*  @param	$el (jQuery element)
+*  @param	n/a
 *  @return	n/a
 */
 
-function render_map( $el ) {
+(function($) {
+	$(document).ready(function(){
+		$('.acf-map').each(function(){
+			// alert('hello');
+			render_map( $(this) );
+		});
+	});
+})( jQuery );
 
-	// var
+
+function render_map( $el ) {
 	var $markers = $el.find('.marker');
 
-	// vars
 	var args = {
 		zoom		: 16,
 		center		: new google.maps.LatLng(0, 0),
@@ -35,13 +38,14 @@ function render_map( $el ) {
 
 	// add markers
 	$markers.each(function(){
-
     	add_marker( $(this), map );
-
 	});
 
 	// center map
 	center_map( map );
+
+	// resize map (so we can see it)
+	google.maps.event.trigger(map, 'resize');
 
 }
 
@@ -60,8 +64,6 @@ function render_map( $el ) {
 */
 
 function add_marker( $marker, map ) {
-
-	// var
 	var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
 
 	// create marker
@@ -74,8 +76,7 @@ function add_marker( $marker, map ) {
 	map.markers.push( marker );
 
 	// if marker contains HTML, add it to an infoWindow
-	if( $marker.html() )
-	{
+	if( $marker.html() ) {
 		// create info window
 		var infowindow = new google.maps.InfoWindow({
 			content		: $marker.html()
@@ -88,7 +89,6 @@ function add_marker( $marker, map ) {
 
 		});
 	}
-
 }
 
 /*
@@ -105,55 +105,20 @@ function add_marker( $marker, map ) {
 */
 
 function center_map( map ) {
-
-	// vars
 	var bounds = new google.maps.LatLngBounds();
 
 	// loop through all markers and create bounds
 	$.each( map.markers, function( i, marker ){
-
 		var latlng = new google.maps.LatLng( marker.position.lat(), marker.position.lng() );
-
 		bounds.extend( latlng );
-
 	});
 
 	// only 1 marker?
-	if( map.markers.length == 1 )
-	{
+	if( map.markers.length == 1 ) {
 		// set center of map
 	    map.setCenter( bounds.getCenter() );
 	    map.setZoom( 16 );
-	}
-	else
-	{
-		// fit to bounds
+	} else {
 		map.fitBounds( bounds );
 	}
-
 }
-
-/*
-*  document ready
-*
-*  This function will render each map when the document is ready (page has loaded)
-*
-*  @type	function
-*  @date	8/11/2013
-*  @since	5.0.0
-*
-*  @param	n/a
-*  @return	n/a
-*/
-
-$(document).ready(function(){
-
-	$('.acf-map').each(function(){
-
-		render_map( $(this) );
-
-	});
-
-});
-
-})(jQuery);
