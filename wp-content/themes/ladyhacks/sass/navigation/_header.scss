@@ -1,0 +1,102 @@
+.header-container {
+	@include linearGradient($color__primary-light, $color__secondary);
+	padding: 1rem 2rem;
+	
+	@media screen and (min-width: 37.5em) {
+		padding: 2rem 4rem;
+	}
+}
+
+.site-header {
+	display: flex;
+	// flex-direction: column;
+  justify-content: space-between;
+	flex-direction: row;
+  flex-wrap: wrap;
+
+	@media screen and (min-width: 68.750em) {
+		flex-wrap: initial;
+		flex: 1 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	// max-width: 75rem;
+}
+
+.site-branding {
+	width: 15rem;
+	flex: 0 1 100%;
+
+	@media screen and (min-width: 37.5em) {
+		flex: 0 1 40%;
+	}
+
+	@media screen and (min-width: 68.750em) {
+		width: 15rem;
+    flex: 0 1 40%;
+	}
+
+	.site-logo {
+		line-height: 0;
+	}
+}
+
+.registration_link {
+  align-self: flex-start;
+  flex: 0 1 50%;
+
+	@media screen and (min-width: 37.5em) {
+	  align-self: center;
+		margin-left: 30%;
+		flex: 0 1 30%;
+	}
+	
+
+	@media screen and (min-width: 68.750em) {
+		order: 3;
+  	margin-left: 0;
+  	max-width: 10em;
+		flex: 1 0 100%;
+	}
+}
+
+.site-intro {
+	max-width: 38rem;
+  margin: 2em auto;
+
+  font-family: $font__mono;
+  font-size: 1.25rem;
+
+  @media screen and (min-width: 37.5em) {
+	  margin: 5em auto;
+
+  }
+
+	blockquote {
+		margin: 0;
+
+		p {
+			font-family: $font__main;
+			font-weight: 100;
+			font-size: 2rem;
+			font-weight: 200;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+
+.site-intro-image {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	position: relative;
+	display: block;
+	
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}

@@ -8,6 +8,10 @@ em, i {
 	font-style: italic;
 }
 
+b, strong {
+	font-weight: 500;
+}
+
 dfn, cite {
 	font-family: $font__mono;
 	font-family: 500;

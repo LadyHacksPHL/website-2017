@@ -1,0 +1,41 @@
+p a {
+	color: $color__link;
+	text-decoration: none;
+	position: relative;
+
+	&:after {
+		content: '';
+		display: block;
+		height: 1px;
+		width: 100%;
+		background-color: $color__link;
+		position: absolute;
+		left: 0; right: 0;
+	}
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus{
+		color: $color__link-hover;
+
+		&:after {
+			background-color: $color__link-hover;
+		}
+	}
+	&:active {
+		color: $color__link-active;
+		
+		&:after {
+			background-color: $color__link-active;
+		}
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

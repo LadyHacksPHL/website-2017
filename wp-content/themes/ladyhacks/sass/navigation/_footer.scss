@@ -1,0 +1,75 @@
+.site-footer {
+	background-color: $black;
+	padding: 1rem 2rem;
+	
+	@media screen and (min-width: 37.5em) {
+		padding: 2rem 4rem;
+	}
+
+	.site-header {
+		display: flex;
+		// flex-direction: column;
+	  justify-content: space-between;
+		flex-direction: row;
+	  flex-wrap: wrap;
+
+		@media screen and (min-width: 68.750em) {
+			flex-wrap: initial;
+			flex: 1 100%;
+			justify-content: space-between;
+			align-items: center;
+		}
+		// max-width: 75rem;
+	}
+
+	.site-branding {
+		width: 15rem;
+		flex: 0 1 100%;
+
+		@media screen and (min-width: 37.5em) {
+			flex: 0 1 40%;
+		}
+
+		@media screen and (min-width: 68.750em) {
+			width: 15rem;
+	    flex: 0 1 40%;
+		}
+
+		.site-logo {
+			line-height: 0;
+		}
+	}
+
+	.main-navigation {
+		
+		li {
+			&:before {
+				color: $color__primary-light;
+			}
+			a {
+				color: $color__primary-light;
+			}
+		}
+	}
+
+	.registration_link {
+		color: $color__primary-light;
+		border-color: $color__primary-light;
+	  align-self: flex-start;
+	  flex: 0 1 50%;
+
+		@media screen and (min-width: 37.5em) {
+		  align-self: center;
+			margin-left: 30%;
+			flex: 0 1 30%;
+		}
+		
+
+		@media screen and (min-width: 68.750em) {
+			order: 3;
+	  	margin-left: 0;
+	  	max-width: 10em;
+			flex: 1 0 100%;
+		}
+	}
+}

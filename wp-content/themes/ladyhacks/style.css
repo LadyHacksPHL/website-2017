@@ -362,19 +362,19 @@ textarea {
 
 /* line 1, sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Share Tech Mono", monospace;
+  font-family: "Clear Sans", serif;
   clear: both;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 /* line 7, sass/typography/_headings.scss */
 h1 {
-  font-size: 1.8rem;
+  font-size: 2.25rem;
 }
 
 /* line 10, sass/typography/_headings.scss */
 h2 {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 /* line 13, sass/typography/_headings.scss */
@@ -400,13 +400,18 @@ em, i {
 }
 
 /* line 11, sass/typography/_copy.scss */
+b, strong {
+  font-weight: 500;
+}
+
+/* line 15, sass/typography/_copy.scss */
 dfn, cite {
   font-family: "Share Tech Mono", monospace;
   font-family: 500;
   color: grey;
 }
 
-/* line 17, sass/typography/_copy.scss */
+/* line 21, sass/typography/_copy.scss */
 cite {
   font-size: 0.85rem;
   font-style: normal;
@@ -437,17 +442,17 @@ cite {
   position: absolute;
 }
 
-/* line 32, sass/typography/_copy.scss */
+/* line 36, sass/typography/_copy.scss */
 blockquote {
   margin: 0 1.5em;
 }
 
-/* line 36, sass/typography/_copy.scss */
+/* line 40, sass/typography/_copy.scss */
 address {
   margin: 0 0 1.5em;
 }
 
-/* line 40, sass/typography/_copy.scss */
+/* line 44, sass/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -460,26 +465,26 @@ pre {
   padding: 1.6em;
 }
 
-/* line 51, sass/typography/_copy.scss */
+/* line 55, sass/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: "Share Tech Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
 }
 
-/* line 56, sass/typography/_copy.scss */
+/* line 60, sass/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted grey;
   cursor: help;
 }
 
-/* line 61, sass/typography/_copy.scss */
+/* line 65, sass/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 66, sass/typography/_copy.scss */
+/* line 70, sass/typography/_copy.scss */
 big {
   font-size: 125%;
 }
