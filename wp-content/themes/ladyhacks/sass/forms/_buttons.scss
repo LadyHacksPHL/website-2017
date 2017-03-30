@@ -1,22 +1,41 @@
+$color__border-button: black;
+$color__border-button-hover: $color__primary;
+$color__border-button-focus: darken($color__primary, 10%);
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+$color__background-button: transparent;
+
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
+	font-family: $font__mono;
+	letter-spacing: 1px;
+	border: 2px solid;
 	border-color: $color__border-button;
-	border-radius: 3px;
+	border-radius: 0;
 	background: $color__background-button;
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
+	color: $color__border-button;
+	@include font-size(1);
 	line-height: 1;
 	padding: .6em 1em .4em;
+	text-transform: uppercase;
+
+	-webkit-transition: 0.15s all ease;
+	-moz-transition: 0.15s all ease;
+	-ms-transition: 0.15s all ease;
+	-o-transition: 0.15s all ease;
+	transition: 0.15s all ease;
+	
 
 	&:hover {
 		border-color: $color__border-button-hover;
+		color: $color__border-button-hover;
 	}
 
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
+		color: $color__border-button-focus;
 	}
 }

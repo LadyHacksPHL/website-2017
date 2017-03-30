@@ -1,9 +1,32 @@
 p {
+	font-size: 18px;
+	line-height: 1.25;
 	margin-bottom: 1.5em;
 }
 
-dfn, cite, em, i {
+em, i {
 	font-style: italic;
+}
+
+dfn, cite {
+	font-family: $font__mono;
+	font-family: 500;
+	color: $med-grey;
+}
+
+cite {
+	font-size: 0.85rem;
+	font-style: normal;
+	color: white;
+	width: 100%;
+	margin: 0;
+	display: block;
+	// height: %;
+	@include linearGradient(transparent, rgba( black, 0.3 ) );
+	bottom: 0;
+	left: 0; right: 0;
+	padding: 1rem 0.5rem 0.25rem;
+	position: absolute;
 }
 
 blockquote {
@@ -31,7 +54,7 @@ code, kbd, tt, var {
 }
 
 abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
+	border-bottom: 1px dotted $med-grey;
 	cursor: help;
 }
 

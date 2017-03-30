@@ -1,5 +1,119 @@
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+// ===================================================
+// Share Tech Mono
+// ===================================================
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono'); 
+
+// ===================================================
+// Maven
+// ===================================================
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
+
+
+
+
+// ===================================================
+// Clear Sans
+// ===================================================
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: local('ClearSans-Thin'), local('Clear Sans Thin'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Thin.eot'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Thin.woff') format('woff'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Thin.ttf') format('truetype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Thin.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('ClearSans-Light'), local('Clear Sans Light'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Light.eot'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Light.eot?#iefix') format('embedded-opentype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Light.woff') format('woff'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Light.ttf') format('truetype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Light.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ClearSans'), local('Clear Sans'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Regular.eot'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Regular.woff') format('woff'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Regular.ttf') format('truetype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('ClearSans-Italic'), local('Clear Sans Italic'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Italic.eot'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Italic.eot?#iefix') format('embedded-opentype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Italic.woff') format('woff'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Italic.ttf') format('truetype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Italic.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('ClearSans-Medium'), local('Clear Sans Medium'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Medium.eot'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Medium.woff') format('woff'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Medium.ttf') format('truetype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Medium.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: local('ClearSans-MediumItalic'), local('Clear Sans Medium Italic'),
+         url('../fonts/clearsans/ClearSans-MediumItalic.eot'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-MediumItalic.woff') format('woff'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-MediumItalic.ttf') format('truetype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-MediumItalic.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('ClearSans-Bold'), local('Clear Sans Bold'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Bold.eot'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Bold.woff') format('woff'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Bold.ttf') format('truetype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-Bold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('ClearSans-BoldItalic'), local('Clear Sans Bold Italic'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-BoldItalic.eot'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-BoldItalic.woff') format('woff'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-BoldItalic.ttf') format('truetype'),
+         url('../ladyhacks/fonts/clearsans/ClearSans-BoldItalic.svg') format('svg');
+       }
+
+$font__main: 'Clear Sans', serif;
+$font__mono: 'Share Tech Mono', monospace;
+$font__code: 'Share Tech Mono', monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;

@@ -14,31 +14,216 @@
 (function($) {
 	$(document).ready(function(){
 		$('.acf-map').each(function(){
-			// alert('hello');
 			render_map( $(this) );
 		});
 	});
 })( jQuery );
 
 
+
 function render_map( $el ) {
 	var $markers = $el.find('.marker');
+	var styles = [
+	{
+		"featureType": "water",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#e9e9e9"
+			},
+			{
+				"lightness": 17
+			}
+		]
+	},
+	{
+		"featureType": "landscape",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#f5f5f5"
+			},
+			{
+				"lightness": 20
+			}
+		]
+	},
+	{
+		"featureType": "road.highway",
+		"elementType": "geometry.fill",
+		"stylers": [
+			{
+				"color": "#ffffff"
+			},
+			{
+				"lightness": 17
+			}
+		]
+	},
+	{
+		"featureType": "road.highway",
+		"elementType": "geometry.stroke",
+		"stylers": [
+			{
+				"color": "#ffffff"
+			},
+			{
+				"lightness": 29
+			},
+			{
+				"weight": 0.2
+			}
+		]
+	},
+	{
+		"featureType": "road.arterial",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#ffffff"
+			},
+			{
+				"lightness": 18
+			}
+		]
+	},
+	{
+		"featureType": "road.local",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#ffffff"
+			},
+			{
+				"lightness": 16
+			}
+		]
+	},
+	{
+		"featureType": "poi",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#f5f5f5"
+			},
+			{
+				"lightness": 21
+			}
+		]
+	},
+	{
+		"featureType": "poi.park",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#dedede"
+			},
+			{
+				"lightness": 21
+			}
+		]
+	},
+	{
+		"elementType": "labels.text.stroke",
+		"stylers": [
+			{
+				"visibility": "on"
+			},
+			{
+				"color": "#ffffff"
+			},
+			{
+				"lightness": 16
+			}
+		]
+	},
+	{
+		"elementType": "labels.text.fill",
+		"stylers": [
+			{
+				"saturation": 36
+			},
+			{
+				"color": "#333333"
+			},
+			{
+				"lightness": 40
+			}
+		]
+	},
+	{
+		"elementType": "labels.icon",
+		"stylers": [
+			{
+				"visibility": "off"
+			}
+		]
+	},
+	{
+		"featureType": "transit",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"color": "#f2f2f2"
+			},
+			{
+				"lightness": 19
+			}
+		]
+	},
+	{
+		"featureType": "administrative",
+		"elementType": "geometry.fill",
+		"stylers": [
+			{
+				"color": "#fefefe"
+			},
+			{
+				"lightness": 20
+			}
+		]
+	},
+	{
+			"featureType": "administrative",
+			"elementType": "geometry.stroke",
+			"stylers": [
+				{
+					"color": "#fefefe"
+				},
+				{
+					"lightness": 17
+				},
+				{
+					"weight": 1.2
+				}
+			]
+	}
+	]
 
 	var args = {
-		zoom		: 16,
+		zoom : 16,
+		mapTypeControlOptions: {
+		mapTypeIds: ['Styled']
+	  },
 		center		: new google.maps.LatLng(0, 0),
-		mapTypeId	: google.maps.MapTypeId.ROADMAP
+		// mapTypeId	: google.maps.MapTypeId.ROADMAP
+	disableDefaultUI: true, 
+	mapTypeId: 'Styled'
 	};
 
 	// create map	        	
 	var map = new google.maps.Map( $el[0], args);
+
+	// create map styles
+	var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+  map.mapTypes.set('Styled', styledMapType);
 
 	// add a markers reference
 	map.markers = [];
 
 	// add markers
 	$markers.each(function(){
-    	add_marker( $(this), map );
+		add_marker( $(this), map );
 	});
 
 	// center map
@@ -116,9 +301,14 @@ function center_map( map ) {
 	// only 1 marker?
 	if( map.markers.length == 1 ) {
 		// set center of map
-	    map.setCenter( bounds.getCenter() );
-	    map.setZoom( 16 );
+		map.setCenter( bounds.getCenter() );
+		map.setZoom( 16 );
 	} else {
 		map.fitBounds( bounds );
 	}
+}
+
+
+function styles() {
+	
 }

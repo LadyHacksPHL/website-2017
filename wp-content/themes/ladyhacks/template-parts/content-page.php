@@ -12,7 +12,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php 
-			the_title( '<h2 class="entry-title">', '</h2>' ); 
+
+		if ( !is_front_page() ) {
+			$page_title = get_the_title(); 
+			echo "<h2>$page_title</h2>";
+		}
 			the_content(); 
 		?>
 	</header><!-- .entry-header -->
