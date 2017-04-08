@@ -1,9 +1,12 @@
 $color__border-button: black;
 $color__border-button-hover: $color__primary;
-$color__border-button-focus: darken($color__primary, 10%);
+$color__border-button-active: darken($color__primary, 10%);
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 $color__background-button: transparent;
+$toggled__color: darken( $white, 15% );
+$toggled__hover: $white;
+$toggled__active: darken( $white, 35% );
 
 button,
 input[type="button"],
@@ -16,26 +19,49 @@ input[type="submit"] {
 	border-radius: 0;
 	background: $color__background-button;
 	color: $color__border-button;
-	@include font-size(1);
 	line-height: 1;
 	padding: .6em 1em .4em;
 	text-transform: uppercase;
+	@include font-size(1);
+	@include border-radius(4);
 
 	-webkit-transition: 0.15s all ease;
 	-moz-transition: 0.15s all ease;
 	-ms-transition: 0.15s all ease;
 	-o-transition: 0.15s all ease;
 	transition: 0.15s all ease;
-	
 
 	&:hover {
+		background: $color__background-button;
 		border-color: $color__border-button-hover;
 		color: $color__border-button-hover;
 	}
 
 	&:active,
 	&:focus {
-		border-color: $color__border-button-focus;
-		color: $color__border-button-focus;
+		border-color: $color__border-button-active;
+		color: $color__border-button-active;
+	}
+}
+.menu-toggle {
+	border: none;
+	padding: 0;
+
+	svg {
+		height: 2.5rem;
+		fill: $color__border-button;
+
+		-webkit-transition: fill 0.25s;
+		-moz-transition: fill 0.25s;
+		-ms-transition: fill 0.25s;
+		-o-transition: fill 0.25s;
+		transition: fill 0.25s;
+
+		&:hover {
+			fill: $color__border-button-hover;
+		}
+		&:active {
+			fill: $color__border-button-active;
+		}
 	}
 }

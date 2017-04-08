@@ -1,17 +1,16 @@
-p a {
+a {
 	color: $color__link;
 	text-decoration: none;
 	position: relative;
+	border-bottom: 1px solid $color__link;
+	border-color: $color__link;
 
-	&:after {
-		content: '';
-		display: block;
-		height: 1px;
-		width: 100%;
-		background-color: $color__link;
-		position: absolute;
-		left: 0; right: 0;
-	}
+	-webkit-transition: all 0.15s;
+	-moz-transition: all 0.15s;
+	-ms-transition: all 0.15s;
+	-o-transition: all 0.15s;
+	transition: all 0.15s;
+	
 
 	&:visited {
 		color: $color__link-visited;
@@ -19,17 +18,11 @@ p a {
 	&:hover,
 	&:focus{
 		color: $color__link-hover;
-
-		&:after {
-			background-color: $color__link-hover;
-		}
+		border-color: $color__link-hover;
 	}
 	&:active {
 		color: $color__link-active;
-		
-		&:after {
-			background-color: $color__link-active;
-		}
+		border-color: $color__link-active;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -37,5 +30,17 @@ p a {
 	&:hover,
 	&:active {
 		outline: 0;
+	}
+}
+
+header {
+	a {
+		border-bottom: none;
+	}
+}
+
+footer {
+	a {
+		border-bottom: none;
 	}
 }

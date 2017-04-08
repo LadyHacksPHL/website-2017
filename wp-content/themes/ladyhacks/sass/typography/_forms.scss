@@ -1,0 +1,59 @@
+input {
+	font-family: $font__main;
+	clear: both;
+	font-weight: 200;
+  border-radius: 0;
+  border: 2px solid black;
+  border-color: black;
+	padding: .35em;
+	margin-bottom: 0.75em;
+
+	-webkit-transition: border-color 0.15s;
+	-moz-transition: border-color 0.15s;
+	-ms-transition: border-color 0.15s;
+	-o-transition: border-color 0.15s;
+	transition: border-color 0.15s;
+	
+
+  &::placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &::-ms-input-placeholder {
+		font-weight: 200;
+		font-style: italic;
+  }
+
+  &:focus {
+	  border-color: $color__primary; 
+  }
+}
+input[type='submit'] {
+	width: 100%;
+	background-color: black;
+	color: white;
+
+	-webkit-transition: background-color 0.15s;
+	-moz-transition: background-color 0.15s;
+	-ms-transition: background-color 0.15s;
+	-o-transition: background-color 0.15s;
+	transition: background-color 0.15s;
+
+	&:hover {
+		background-color: $color__primary;
+	}
+	&:active {
+		background-color: $color__link-active;
+	}
+}
+
+
+
+
+/*--------------------------------------------------------------
+## Contact Form
+--------------------------------------------------------------*/
+.cntctfrm_label {
+	font-weight: 400;
+	font-size: 0.85rem;
+	padding-bottom: 0.25em;
+}

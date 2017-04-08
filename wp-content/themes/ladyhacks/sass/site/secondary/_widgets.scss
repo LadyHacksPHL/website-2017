@@ -6,3 +6,27 @@
 		max-width: 100%;
 	}
 }
+
+.cntctfrm_label {
+	font-family: $font__mono;
+	margin-bottom: 0.25rem;
+}
+.cntctfrmpr_field_wrap {
+	margin-bottom: 1rem;
+}
+.contact-form p {
+  font-size: 1.45rem;
+  font-weight: 100;
+}
+.cntctfrm_error_text {
+	color: $black;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	display: none;
+}
+.cntctfrmpr_field_wrap .cntctfrm_error_text {
+	color: darken($color__primary, 20%);
+	font-size: 0.75rem;
+	display: block;
+  margin-bottom: 0.25rem;
+}

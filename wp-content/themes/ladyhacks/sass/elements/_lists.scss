@@ -1,25 +1,95 @@
-ul, ol {
-	margin: 0 0 1.5em 3em;
-}
+#content {
+	dt {
+		font-family: $font__mono;
+		font-size: 1.75rem;
+		letter-spacing: -1px;
 
-ul {
-	list-style: disc;
-}
+		p {
+			margin-bottom: 0;
+		}
+	}
 
-ol {
-	list-style: decimal;
-}
+	dd {
+	  font-size: 1.45rem;
+		margin: 0!important;
+	  margin-top: 1.25rem!important;
+	  font-weight: 100;
+	}
 
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
+	.page-schedule dl {
+		border-top: 1px solid $light-grey;
+		border-bottom: 1px solid #e0e0e0;
+		display: flex;
+	  flex-flow: row;
+	  flex-wrap: wrap;
+		padding-bottom: 1.5rem;
+		overflow: visible;
+		margin: 0 auto 3rem;
 
-dt {
-	font-weight: bold;
-}
+    max-width: $text__width;
+	}
 
-dd {
-	margin: 0 1.5em 1.5em;
+	.page-schedule dt {
+		color: $color__primary-light;
+	  font-size: 1.65rem;
+	  text-align: right;
+	  padding-right: 2rem;
+		flex: 0 0 30%;  
+		text-overflow: ellipsis;
+	  overflow: hidden;
+	  margin-top: 1.25rem;
+	}
+
+	.page-schedule dd {
+	  flex: 0 0 70%;
+	  text-align: left;
+	  text-overflow: ellipsis;
+	  overflow: hidden;    
+	}
+
+	ul {
+		padding: 0;
+		margin: 0 auto;
+		list-style-type: none;
+		max-width: $text__width;
+		font-size: 1.15rem;
+    font-weight: 300;
+
+		li {
+			margin-bottom: 1rem;
+	    padding-left: 1rem;
+	    text-indent: -1rem;
+
+			&:before {
+				content: "\25EE";
+				margin-right: 0.2rem;
+			}
+		}
+	}
+
+	ol {
+		padding: 0;
+    margin: 0 auto;
+		max-width: $text__width;
+		font-size: 1.15rem;
+    font-weight: 300;
+		counter-reset: list-counter;
+		list-style-type: none;
+
+		li {
+			margin-bottom: 1rem;
+	    padding-left: 1.5rem;
+	    text-indent: -1rem;
+
+			&:before {
+				content: counter(list-counter);
+				counter-increment: list-counter;
+				margin-right: 0.35rem;
+				font-weight: 500;
+		    display: inline-block;
+		    text-align: right;
+		    min-width: 0.5rem;
+			}
+		}
+	}
 }

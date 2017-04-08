@@ -1,18 +1,24 @@
 .header-container {
-	@include linearGradient($color__primary-light, $color__secondary);
-	padding: 1rem 2rem;
+	padding: 1rem 2rem 3rem;
+	@include linearGradient($color__secondary, transparent);
 	
 	@media screen and (min-width: 37.5em) {
-		padding: 2rem 4rem;
+		padding: 2rem 4rem 5rem;
 	}
 }
 
+.home .header-container {
+	@include linearGradient($color__secondary, $color__primary-light);
+}
+
 .site-header {
-	display: flex;
-	// flex-direction: column;
-  justify-content: space-between;
-	flex-direction: row;
-  flex-wrap: wrap;
+
+	@media screen and (min-width: 37.5em) {
+		display: flex;
+	  justify-content: space-between;
+		flex-direction: row;
+	  flex-wrap: wrap;
+	}
 
 	@media screen and (min-width: 68.750em) {
 		flex-wrap: initial;
@@ -20,24 +26,30 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	// max-width: 75rem;
 }
 
 .site-branding {
 	width: 15rem;
-	flex: 0 1 100%;
+	display: inline-block;
 
 	@media screen and (min-width: 37.5em) {
 		flex: 0 1 40%;
 	}
 
 	@media screen and (min-width: 68.750em) {
-		width: 15rem;
-    flex: 0 1 40%;
+		max-width: 25rem;
+    margin-right: 10%;
+    flex: 0 1 30%;
+	}
+	
+	@media screen and (min-width: 89.563em) {
+    margin-right: 20%;
+    flex: 0 1 70%;
 	}
 
 	.site-logo {
 		line-height: 0;
+		margin-top: 0;
 	}
 }
 
@@ -55,8 +67,7 @@
 	@media screen and (min-width: 68.750em) {
 		order: 3;
   	margin-left: 0;
-  	max-width: 10em;
-		flex: 1 0 100%;
+		flex: 0 1 10%;
 	}
 }
 
@@ -99,4 +110,13 @@
 		height: auto;
 		display: block;
 	}
+}
+
+
+.site-header .registration_link {
+	display: none;
+
+  @media screen and (min-width: 37.5em) {
+  	display: block;
+  }
 }

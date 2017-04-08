@@ -1,19 +1,51 @@
 .gallery {
 	margin-bottom: 1.5em;
+	max-width: $gallery__width!important;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .gallery-item {
 	display: inline-block;
-	text-align: center;
+	text-align: left;
 	vertical-align: top;
-	width: 100%;
+	width: 98%;
+	padding: 0 1%;
+
+	p {
+		text-indent: 0;
+	}
+
+	&:before {
+		content: ""!important;
+		display: none!important;
+	}
+
+	h4 {
+		text-align: center;
+		font-size: 1.65rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+	}
+
+	p {
+		font-size: 1.15rem;
+	}
 
 	.gallery-columns-2 & {
 		max-width: 50%;
 	}
 
 	.gallery-columns-3 & {
-		max-width: 33.33%;
+		width: 98%;
+
+		@media screen and (42.188em) {
+			max-width: 50%;
+		}
+
+		@media screen and (min-width: 55.625em) {
+			max-width: 33.33%;
+		}
 	}
 
 	.gallery-columns-4 & {
@@ -43,4 +75,155 @@
 
 .gallery-caption {
 	display: block;
+}
+
+
+// Featured Images
+.featured-image-container {
+	display: block;
+	width: 100%;
+	text-align: center;
+	
+}
+.featured-image {
+	display: inline-block;
+	position: relative;
+	line-height: 0;
+	margin-top: -3rem;
+	margin-left: 5%;
+	margin-right: 5%;
+	max-width: $gallery__width;
+
+	@media screen and (min-width: 42.188em) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	img {
+		@include border-radius(4);
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		border: 4px solid $black;
+		width: 100%;
+		height: 100%;
+		left: -0.75rem;
+		bottom: -0.75rem;
+		@include border-radius(4);
+	}
+}
+
+
+// Sponsor-specific
+.sponsor {
+	
+	p {
+		text-indent: 0;
+	}
+}
+
+// People-specific
+.person-group-intro {
+	font-weight: 100;
+	margin-bottom: 5rem;
+
+	p {
+		max-width: $text__width;
+		font-size: 1.35rem!important;
+	}
+}
+
+.person {
+
+	.headshot {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: block;
+		height: 100%;
+		width: 70%;
+		margin: 0 auto;
+		border: 1px solid darken( $color__background-body, 5% );
+		@include border-radius(4);
+		position: relative;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			border: 4px solid $black;
+			width: 100%;
+			height: 100%;
+			left: -0.75rem;
+			bottom: -0.75rem;
+			@include border-radius(4);
+		}
+	}
+}
+.person .headshot img {
+	width: 100%;
+	height: auto;
+}
+
+.person .no-headshot {
+	outline: 4px solid $black;
+	outline-offset: -4px;
+	text-align: center;
+	@include border-radius(4);
+
+	span {
+		font-family: $font__mono;
+		font-size: 2rem;
+		position: absolute;    
+		top: 50%;
+    margin-top: -2rem;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+}
+
+// Social Media Links
+.social-media {
+	list-style-type: none!important;
+	text-align: center;
+
+}
+.social-media-item {
+	width: 3rem;
+	display: inline-block;
+
+	&:before {
+		content: ""!important;
+		display: none!important;
+	}
+}
+.social-media-link {
+	border-bottom: none;
+
+	svg {
+		fill: $black;
+
+		-webkit-transition: fill 0.5s;
+		-moz-transition: fill 0.5s;
+		-ms-transition: fill 0.5s;
+		-o-transition: fill 0.5s;
+		transition: fill 0.5s;
+	}
+	
+
+	&:hover {
+		svg {
+			fill: darken($color__secondary, 20%);
+		}
+	}
+
+	&:active {
+		svg {
+			fill: darken($color__secondary, 25%);
+		}
+	}
 }

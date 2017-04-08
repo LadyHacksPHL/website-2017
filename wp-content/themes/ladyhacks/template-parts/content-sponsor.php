@@ -8,6 +8,7 @@
  */
 
 	if( have_rows('sponsor_group') ) {
+		echo "<ul class='sponsor-group sponsor-group--$cat gallery gallery-columns-2'>";
 		// echo "<div class='sponsor-group'>";
 		while( have_rows('sponsor_group') ): the_row();
 			$cat = get_sub_field('sponsor_category')[value];
@@ -16,10 +17,8 @@
 			$sponsor = get_sub_field('sponsor');
 
 			if ($cat=='other' AND $catCustom!=NULL) $header = $catCustom;
-			elseif ($cat=='other' AND $catCustom==NULL) $header = "Other folks";
+			elseif ($cat=='other' AND $catCustom==NULL) $header = "Sponsor";
 			else $header = $catFriendly;
-
-			echo "<h3>$header Sponsors</h2>";
 
 			if( have_rows('sponsor') ) {
 				while( have_rows('sponsor') ): the_row();
@@ -29,15 +28,15 @@
 					$website = get_sub_field('website');
 					$about = get_sub_field('about');
 
-					echo "<ul class='sponsor-group sponsor-group--$cat'>";
-						echo "<li class='sponsor'>";
+						echo "<li class='sponsor gallery-item'>";
 							echo "<img src='$logoURL' alt='$sponsor Logo' />";
 							echo "<h4>$sponsor</h4>";
+							echo "<h5>$header</h5>";
 							echo "<p>$about</p>";
 							echo "<a href='$website'>Visit $sponsor's website</a>";
 						echo "</li>";
-				echo "</ul>";
 				endwhile;
 			} // Check to see if there are Sponsor rows
 		endwhile;
+	echo "</ul>";
 } // Check to see if there are Sponsor Group rows

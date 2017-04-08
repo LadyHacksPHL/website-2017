@@ -1,11 +1,15 @@
-$med-grey: grey;
+$light-grey: #e0e0e0;
+$med-grey: #adadad;
+$dark-grey: #858585;
+$very-dark-grey: #1b1b1b;
 $black: black;
+$white: #e9e8e7;
 $color__primary: #f64410;
 $color__secondary: #f6d365;
 $color__primary-light: #fda085;
 $color__contrast: #49c5cd;
 
-$color__background-body: #fff;
+$color__background-body: $white;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
@@ -19,3 +23,7 @@ $color__link-visited: $color__primary;
 $color__link-hover: lighten($color__primary, 20%);
 $color__link-active: darken($color__primary, 5%);
 $color__text-main: $black;
+
+$color__border-input: $black;
+$color__text-input: $black;
+$color__text-input-focus: $black;

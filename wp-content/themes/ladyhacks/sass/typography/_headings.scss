@@ -2,6 +2,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font__main;
 	clear: both;
 	font-weight: 200;
+	margin-bottom: 0;
+	max-width: $text__width;
+	margin: 2rem 5% 0;
+
+	@media screen and (min-width: 42.188em) {
+		margin: 2rem auto 0;
+	}
+}
+
+.entry-content {
+	h1, h2, h3, h4, h5, h6 {
+		margin: 2.5rem auto 0.5rem;
+	}
 }
 
 h1 {
@@ -9,9 +22,12 @@ h1 {
 }
 h2 {
 	font-size: 2rem;
+	font-weight: 500;
+	color: $color__primary;
 }
 h3 {
-	font-size: 1.3rem;
+	font-size: 1.45rem;
+	font-weight: 500;
 }
 h4 {
 	font-size: 1.25rem;

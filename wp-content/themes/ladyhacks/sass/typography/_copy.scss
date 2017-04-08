@@ -1,72 +1,78 @@
-p {
-	font-size: 18px;
-	line-height: 1.25;
-	margin-bottom: 1.5em;
-}
+#content {
+	font-size: 1.25rem;
 
-em, i {
-	font-style: italic;
-}
+	p {
+		line-height: 1.8;
+		margin: 0 auto 0.85rem;
+		max-width: $text__width;
+		font-size: 1.15rem;
+    font-weight: 300;
+	}
 
-b, strong {
-	font-weight: 500;
-}
+	em, i {
+		font-style: italic;
+	}
 
-dfn, cite {
-	font-family: $font__mono;
-	font-family: 500;
-	color: $med-grey;
-}
+	b, strong {
+		font-weight: 500;
+	}
 
-cite {
-	font-size: 0.85rem;
-	font-style: normal;
-	color: white;
-	width: 100%;
-	margin: 0;
-	display: block;
-	// height: %;
-	@include linearGradient(transparent, rgba( black, 0.3 ) );
-	bottom: 0;
-	left: 0; right: 0;
-	padding: 1rem 0.5rem 0.25rem;
-	position: absolute;
-}
+	dfn, cite {
+		font-family: $font__mono;
+		font-family: 500;
+		color: $med-grey;
+	}
 
-blockquote {
-	margin: 0 1.5em;
-}
+	cite {
+		font-size: 0.85rem;
+		font-style: normal;
+		color: white;
+		width: 100%;
+		margin: 0;
+		display: block;
+		// height: %;
+		@include linearGradient(transparent, rgba( black, 0.3 ) );
+		bottom: 0;
+		left: 0; right: 0;
+		padding: 1rem 0.5rem 0.25rem;
+		position: absolute;
+	}
 
-address {
-	margin: 0 0 1.5em;
-}
+	blockquote {
+		margin: 0 1.5em;
+	}
 
-pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
-	@include font-size(0.9375);
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
+	address {
+		margin: 0 0 1.5em;
+	}
 
-code, kbd, tt, var {
-	font-family: $font__code;
-	@include font-size(0.9375);
-}
+	pre {
+		background: $color__background-pre;
+		font-family: $font__pre;
+		@include font-size(0.9375);
+		line-height: $font__line-height-pre;
+		margin-bottom: 1.6em;
+		max-width: 100%;
+		overflow: auto;
+		padding: 1.6em;
+	}
 
-abbr, acronym {
-	border-bottom: 1px dotted $med-grey;
-	cursor: help;
-}
+	code, kbd, tt, var {
+		font-family: $font__code;
+		@include font-size(0.9375);
+	}
 
-mark, ins {
-	background: $color__background-ins;
-	text-decoration: none;
-}
+	abbr, acronym {
+		border-bottom: 1px dotted $med-grey;
+		cursor: help;
+	}
 
-big {
-	font-size: 125%;
+	mark, ins {
+		background: $color__background-ins;
+		text-decoration: none;
+	}
+
+	big {
+		font-size: 125%;
+	}
 }

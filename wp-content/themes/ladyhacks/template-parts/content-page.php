@@ -10,30 +10,38 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
 		<?php 
+			$size = 'full';
+			$featuredImage = get_the_post_thumbnail(null, $size );
 
-		if ( !is_front_page() ) {
-			$page_title = get_the_title(); 
-			echo "<h2>$page_title</h2>";
-		}
-			the_content(); 
+			if ( has_post_thumbnail() ) {
+				echo "<div class='featured-image-container'>";
+					echo "<div class='featured-image'>$featuredImage</div>";
+				echo "</div>";
+			}
 		?>
-	</header><!-- .entry-header -->
+	<header class="entry-header">
+	<?php 
+	$page_title = get_the_title(); 
+	$page_classname = str_replace(' ', '-', strtolower($page_title));
+	if ( !is_front_page() ) {
+		echo "<h2>$page_title</h2>";
+	}
+	echo "</header>"; // .entry-header
 
-	<div class="entry-content">
-		<?php
-			// Sponsors Repeater Field Group
-			if( have_rows('sponsor_group') ) get_template_part( 'template-parts/content', 'sponsor' );
+	echo "<div class='entry-content page-$page_classname'>";
+		// Wordpress Main Content
+		echo wpautop( $post->post_content );
 
-			// People Repeater Field Group
-			if( have_rows('group') ) get_template_part( 'template-parts/content', 'people' );
+		// Sponsors Repeater Field Group
+		if( have_rows('sponsor_group') ) get_template_part( 'template-parts/content', 'sponsor' );
 
-			// wp_link_pages( array(
-			// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ladyhacks' ),
-			// 	'after'  => '</div>',
-			// ) );
-		?>
+		// People Repeater Field Group
+		if( have_rows('group') ) get_template_part( 'template-parts/content', 'people' );
+
+		// FAQs Repeater Field Group
+		if( have_rows('question_and_answer') ) get_template_part( 'template-parts/content', 'faq' );
+	?>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
