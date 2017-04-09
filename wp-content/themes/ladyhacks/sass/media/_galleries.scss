@@ -8,7 +8,10 @@
 .images {
 
 	.gallery {
-		margin-bottom: 1rem!important;
+		margin-bottom: 0.25rem!important;
+		@media screen and (min-width: 54.688em) {
+			margin-bottom: 1rem!important;
+		}
 	}
 
 	.gallery-item {
@@ -19,12 +22,17 @@
 			content: "";
 			position: absolute;
 			display: block;
-			width: 1rem;
 			background-color: $white;
 			top: 0;
 			bottom: 0;
-			right: -1rem;
+			right: -0.25rem;
+			width: 0.25rem;
 	    z-index: 1;
+
+	    @media screen and (min-width: 54.688em) {
+				width: 1rem;
+				right: -1rem;
+	    }
 		}
 
 		&:last-child {

@@ -206,13 +206,25 @@ section {
 }
 
 .text-w-image {
-	display: flex;
-	flex-direction: column; 
-	justify-content: space-between;
-	flex-wrap: wrap;
+	text-align: center;
+	max-width: $gallery__width;
+  margin: 1rem auto;
+	
+	@media screen and (min-width: 68.500em) {
+		display: flex;
+		flex-direction: row; 
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 0;
+	  margin: 4rem auto;
+	}
 
 	.text-block {
-		flex: 0 1 100%;
+		text-align: left;
+
+		@media screen and (min-width: 68.500em) {
+			flex: 0 1 50%;
+		}
 
 		h3 {
 			font-weight: 100;
@@ -224,7 +236,13 @@ section {
 		}
 	}
 	.supporting-image-container {
-		flex: 0 1 100%;
+		display: inline-block;
+		margin-top: 2rem;
+		
+		@media screen and (min-width: 68.500em) {
+			margin-top: 0;
+			flex: 0 1 45%;
+		}
 	}
 }
 
@@ -328,8 +346,14 @@ section {
 .home .gallery-columns-4 {
 
 	.gallery-item{
-		padding: 0 2rem;
+		padding: 2rem;
 	  vertical-align: middle;
+		max-width: 50%;
+
+		@media screen and (min-width: 54.688em) {
+			max-width: 25%;
+			padding: 0 2rem;
+		}
 
 		&:after {
 			display: none;

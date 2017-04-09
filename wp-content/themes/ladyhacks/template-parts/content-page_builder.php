@@ -21,16 +21,16 @@
 			$imageALT = $image['alt'];
 
 			echo "<section class='text-w-image'>";
-				echo "<div class='text-block'>";
-					if ($header) echo "<h3>$header</h3>";
-					echo $bodyCopy;
-			echo "</div>";
-				
 				echo "<div class='supporting-image-container'>";
 					echo "<div class='supporting-image'>";
 						echo "<img src='$imageURL' alt='$imageALT' />";
 					echo "</div>";
 				echo "</div>";
+
+				echo "<div class='text-block'>";
+					if ($header) echo "<h3>$header</h3>";
+					echo $bodyCopy;
+			echo "</div>";
 			echo "</section>";
 		}
 		
