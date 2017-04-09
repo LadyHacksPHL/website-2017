@@ -5,12 +5,44 @@
 	text-align: center;
 }
 
+.images {
+
+	.gallery {
+		margin-bottom: 1rem!important;
+	}
+
+	.gallery-item {
+		position: relative;
+		line-height: 0; 
+		
+		&:after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 1rem;
+			background-color: $white;
+			top: 0;
+			bottom: 0;
+			right: -1rem;
+	    z-index: 1;
+		}
+
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
 .gallery-item {
 	display: inline-block;
 	text-align: left;
-	vertical-align: top;
-	width: 98%;
-	padding: 0 1%;
+  vertical-align: top;
+
+	img {
+		width: 100%;
+	}
 
 	p {
 		text-indent: 0;
@@ -30,6 +62,10 @@
 
 	p {
 		font-size: 1.15rem;
+	}
+	
+	.gallery-columns-1 & {
+	  width: 100%;
 	}
 
 	.gallery-columns-2 & {
@@ -83,18 +119,18 @@
 	display: block;
 	width: 100%;
 	text-align: center;
-	
 }
 .featured-image {
 	display: inline-block;
 	position: relative;
 	line-height: 0;
-	margin-top: -3rem;
+  margin-top: -1rem;
 	margin-left: 5%;
 	margin-right: 5%;
-	max-width: $gallery__width;
+	max-width: $featured__width;
 
 	@media screen and (min-width: 42.188em) {
+	  margin-top: -2rem;
 		margin-left: 0;
 		margin-right: 0;
 	}
@@ -116,7 +152,6 @@
 	}
 }
 
-
 // Sponsor-specific
 .sponsor {
 	
@@ -137,7 +172,6 @@
 }
 
 .person {
-
 	.headshot {
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -201,6 +235,7 @@
 		display: none!important;
 	}
 }
+
 .social-media-link {
 	border-bottom: none;
 
@@ -213,7 +248,6 @@
 		-o-transition: fill 0.5s;
 		transition: fill 0.5s;
 	}
-	
 
 	&:hover {
 		svg {

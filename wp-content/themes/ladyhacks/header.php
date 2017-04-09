@@ -31,11 +31,6 @@
 				$logo = file_get_contents('SVGs/inline-logo.svg', true);
 
 				echo "<h1 class='site-logo'><a href='$home_url' rel='home'>$logo</a></h1>";
-
-				// $description = get_bloginfo( 'description', 'display' );
-				// if ( $description || is_customize_preview() ) {
-				// 	echo "<p class='site-description'>$description</p>";
-				// }
 			?>
 			</div><!-- .site-branding -->
 			<?php 
@@ -69,9 +64,6 @@
 			$intro_image_width = $intro_image[width];
 			$intro_image_height = $intro_image[height];
 			$intro_image_caption = $intro_image[caption];
-			//echo "<div class='site-intro-image'><cite>$intro_image_caption</cite><img src='$intro_image_url'></div>";
-			// $avg_ratio += $intro_image['width']/$intro_image['height'];
-			// $margin_ratio = (1/$avg_ratio-1)*100;
 
 			if ( is_home() || is_front_page() ) {
 				echo "<div class='site-intro'>$intro_text</div>";

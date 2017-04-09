@@ -13,9 +13,14 @@
  */
 
 get_header(); ?>
+<?php 
+	$page_title = get_the_title(); 
+	$page_classname = str_replace(' ', '-', strtolower($page_title));
+	$post_content = wpautop( $post->post_content );
+?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main <?php echo "page-".$page_classname?>" role="main">
 
 			<?php
 			while ( have_posts() ) : the_post();

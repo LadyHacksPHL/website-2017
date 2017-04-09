@@ -12,39 +12,8 @@
 	dd {
 	  font-size: 1.45rem;
 		margin: 0!important;
-	  margin-top: 1.25rem!important;
-	  font-weight: 100;
-	}
-
-	.page-schedule dl {
-		border-top: 1px solid $light-grey;
-		border-bottom: 1px solid #e0e0e0;
-		display: flex;
-	  flex-flow: row;
-	  flex-wrap: wrap;
-		padding-bottom: 1.5rem;
-		overflow: visible;
-		margin: 0 auto 3rem;
-
-    max-width: $text__width;
-	}
-
-	.page-schedule dt {
-		color: $color__primary-light;
-	  font-size: 1.65rem;
-	  text-align: right;
-	  padding-right: 2rem;
-		flex: 0 0 30%;  
-		text-overflow: ellipsis;
-	  overflow: hidden;
 	  margin-top: 1.25rem;
-	}
-
-	.page-schedule dd {
-	  flex: 0 0 70%;
-	  text-align: left;
-	  text-overflow: ellipsis;
-	  overflow: hidden;    
+	  font-weight: 100;
 	}
 
 	ul {

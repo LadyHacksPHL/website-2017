@@ -8,7 +8,11 @@
  */
 
 ?>
-
+<?php 
+	$page_title = get_the_title(); 
+	$page_classname = str_replace(' ', '-', strtolower($page_title));
+	$post_content = wpautop( $post->post_content );
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php 
 			$size = 'full';
@@ -20,27 +24,32 @@
 				echo "</div>";
 			}
 		?>
-	<header class="entry-header">
-	<?php 
-	$page_title = get_the_title(); 
-	$page_classname = str_replace(' ', '-', strtolower($page_title));
-	if ( !is_front_page() ) {
-		echo "<h2>$page_title</h2>";
-	}
-	echo "</header>"; // .entry-header
+	<?php
+		if ( !is_front_page() ) {
+			echo "<header class='entry-header'>";
+				echo "<h2>$page_title</h2>";
+			echo "</header>"; // .entry-header
+		}
+		
+		if ($post_content) echo "<section class='$page_classname-intro-section intro-section'>";
+			echo "<div class='entry-content'>";
+			// Wordpress Main Content
+		if ($post_content) echo wpautop( $post->post_content );
+		if ($post_content) echo "</section>";
 
-	echo "<div class='entry-content page-$page_classname'>";
-		// Wordpress Main Content
-		echo wpautop( $post->post_content );
+			// Sponsors Repeater Field Group
+			if( have_rows('sponsor_group') ) get_template_part( 'template-parts/content', 'sponsor' );
 
-		// Sponsors Repeater Field Group
-		if( have_rows('sponsor_group') ) get_template_part( 'template-parts/content', 'sponsor' );
+			// People Repeater Field Group
+			if( have_rows('group') ) get_template_part( 'template-parts/content', 'people' );
 
-		// People Repeater Field Group
-		if( have_rows('group') ) get_template_part( 'template-parts/content', 'people' );
+			// FAQs Repeater Field Group
+			if( have_rows('question_and_answer') ) get_template_part( 'template-parts/content', 'faq' );
 
-		// FAQs Repeater Field Group
-		if( have_rows('question_and_answer') ) get_template_part( 'template-parts/content', 'faq' );
+			// Page Builder Fields
+			if ( is_front_page() || $page_classname == "schedule") {
+				if( have_rows('custom_page_content') ) get_template_part( 'template-parts/content', 'page_builder' );
+			}
 	?>
 	</div><!-- .entry-content -->
 

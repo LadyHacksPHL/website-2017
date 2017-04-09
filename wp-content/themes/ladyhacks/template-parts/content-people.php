@@ -8,7 +8,6 @@
  */
 
 	if( have_rows('group') ) {
-		// echo "<div class='sponsor-group'>";
 		while( have_rows('group') ): the_row();
 			$cat = get_sub_field('type_of_group')[value];
 			$catFriendly = get_sub_field('type_of_group')[label];
