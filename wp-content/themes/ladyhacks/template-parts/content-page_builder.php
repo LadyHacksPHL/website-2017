@@ -45,8 +45,6 @@
 				if ($header) echo "<h3>$header</h3>";
 				echo $bodyCopy;
 
-				print_r();
-
 				if ($style=="special") {
 					echo "<div class='floater-container'>$floaterSVG</div>";
 				}
