@@ -60,10 +60,10 @@
 		<?php 
 			$intro_text = get_field('intro_text', 'option');
 			$intro_image = get_field('intro_image', 'option');
-			$intro_image_url = $intro_image[url];
-			$intro_image_width = $intro_image[width];
-			$intro_image_height = $intro_image[height];
-			$intro_image_caption = $intro_image[caption];
+			$intro_image_url = $intro_image['url'];
+			$intro_image_width = $intro_image['width'];
+			$intro_image_height = $intro_image['height'];
+			$intro_image_caption = $intro_image['caption'];
 
 			if ( is_home() || is_front_page() ) {
 				echo "<div class='site-intro'>$intro_text</div>";
