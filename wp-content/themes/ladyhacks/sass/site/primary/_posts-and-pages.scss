@@ -41,7 +41,7 @@ section {
 	margin: 0 auto;
 	font-size: 1.35rem;
 	font-weight: 100;
-	padding: 2rem 0;
+	padding: 0;
 	max-width: $text__width;
 
 	@media screen and (min-width: 35em) {
@@ -67,7 +67,7 @@ section {
 // Custom Page Builder Styles
 .special-container,
 .background-container {
-	padding: 3rem 5% 5rem;
+	padding: 2.25rem 5% 3.5rem;
 	margin: 4rem 0;
 
 	@media screen and (min-width: 55.625em) {
@@ -90,9 +90,14 @@ section {
 	h3 {
 		font-weight: 100;
 		font-size: 2.35rem;
-		letter-spacing: 0.5px;
 		margin-bottom: 1.25rem;
+		letter-spacing: 0.5px;
 		z-index: 1;
+
+		@media screen and (min-width: 42.188em) {
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+		}
 	}
 
 	p {
@@ -101,15 +106,20 @@ section {
 		font-size: 1.75rem!important;
 		letter-spacing: 0.5px;
 		z-index: 1;
+
+		@media screen and (min-width: 42.188em) {
+			font-size: 1.15rem!important;
+		}
 	}
 	.floater-container {
 		position: absolute;
-    top: -4rem;
-    bottom: -1rem;
-    right: 0;
-    left: 0;
+    	top: -4rem;
+    	bottom: -1rem;
+    	right: 0;
+    	left: 0;
 		pointer-events: none;
 		z-index: 0;
+		overflow: hidden;
 
 		svg {
 			fill: $color__contrast;
@@ -125,8 +135,12 @@ section {
 	
 }
 .dropcap-container {
-	padding-top: 8rem;
-	padding-bottom: 8rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	@media screen and (min-width: 68.500em) {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
 	p {
 		font-size: 1.5rem!important;
 		font-weight: 100!important;
@@ -293,9 +307,7 @@ section {
 .sponsor-group {
 	display: flex;
 	flex-direction: column;
-	border-top: 2px solid $med-grey;
 	padding-top: 3rem !important;
-  margin-top: 3rem!important;
 }
 .sponsor {
 	text-indent: 0!important;

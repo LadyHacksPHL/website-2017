@@ -81,9 +81,9 @@
 	}
 
 	.gallery-columns-3 & {
-		width: 98%;
+		max-width: 98%;
 
-		@media screen and (42.188em) {
+		@media screen and (27.250em) {
 			max-width: 50%;
 		}
 
@@ -139,8 +139,6 @@
 
 	@media screen and (min-width: 42.188em) {
 	  margin-top: -2rem;
-		margin-left: 0;
-		margin-right: 0;
 	}
 	
 	img {
