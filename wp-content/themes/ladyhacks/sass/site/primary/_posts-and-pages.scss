@@ -311,42 +311,53 @@ section {
 }
 .sponsor {
 	text-indent: 0!important;
+	margin-bottom: 5rem!important;
+	margin-left: 0!important;
 
 	@media screen and (min-width: 67.000em) {
-		display: flex!important;
-	  flex-wrap: wrap;
-		flex-direction: row;
+		// display: flex!important;
+	  // flex-wrap: wrap;
+		// flex-direction: row;
 	}
 
 	h4 {
 		text-align: left!important;
 		font-size: 1.85rem!important;
 		font-weight: 100!important;
-    margin: 0;
+		margin: 0 auto;
 	}
 	h5 {
 		text-align: left;
 		font-size: 1.25rem!important;
 		font-weight: 400!important;
-    margin: 0;
+		margin: 0 auto;
 	}
 	p {
-		margin-left: 0!important; 
+		// margin-left: 0!important; 
 	}
 }
+// .sponsor-website {
+// 	margin: 0 auto;
+// }
 .logo-container {
-	max-width: 15rem;
-	margin-bottom: 1rem;
+	margin: 0 auto 1rem;
+
+	img {
+		max-width: 15rem;
+	}
 
 	@media screen and (min-width: 67.000em) {
-		margin-bottom: 0;
-		flex: 0 1 20%;
-		margin-right: 2%;
+		// margin-bottom: 20px;
+		// flex: 0 1 20%;
+		// margin-right: 2%;
 	}
 }
 .sponsor-content {
+	max-width: 45rem;
+  margin: 0 auto;
+
 	@media screen and (min-width: 67.000em) {
-		flex: 0 1 78%;
+		// flex: 0 1 78%;
 	}
 }
 

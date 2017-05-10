@@ -2084,76 +2084,60 @@ section {
 /* line 312, sass/site/primary/_posts-and-pages.scss */
 .sponsor {
   text-indent: 0 !important;
+  margin-bottom: 5rem !important;
+  margin-left: 0 !important;
 }
-@media screen and (min-width: 67em) {
-  /* line 312, sass/site/primary/_posts-and-pages.scss */
-  .sponsor {
-    display: flex !important;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-}
-/* line 321, sass/site/primary/_posts-and-pages.scss */
+/* line 323, sass/site/primary/_posts-and-pages.scss */
 .sponsor h4 {
   text-align: left !important;
   font-size: 1.85rem !important;
   font-weight: 100 !important;
-  margin: 0;
+  margin: 0 auto;
 }
-/* line 327, sass/site/primary/_posts-and-pages.scss */
+/* line 329, sass/site/primary/_posts-and-pages.scss */
 .sponsor h5 {
   text-align: left;
   font-size: 1.25rem !important;
   font-weight: 400 !important;
-  margin: 0;
-}
-/* line 333, sass/site/primary/_posts-and-pages.scss */
-.sponsor p {
-  margin-left: 0 !important;
+  margin: 0 auto;
 }
 
-/* line 337, sass/site/primary/_posts-and-pages.scss */
+/* line 342, sass/site/primary/_posts-and-pages.scss */
 .logo-container {
+  margin: 0 auto 1rem;
+}
+/* line 345, sass/site/primary/_posts-and-pages.scss */
+.logo-container img {
   max-width: 15rem;
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 67em) {
-  /* line 337, sass/site/primary/_posts-and-pages.scss */
-  .logo-container {
-    margin-bottom: 0;
-    flex: 0 1 20%;
-    margin-right: 2%;
-  }
 }
 
-@media screen and (min-width: 67em) {
-  /* line 347, sass/site/primary/_posts-and-pages.scss */
-  .sponsor-content {
-    flex: 0 1 78%;
-  }
+/* line 355, sass/site/primary/_posts-and-pages.scss */
+.sponsor-content {
+  max-width: 45rem;
+  margin: 0 auto;
 }
 
-/* line 354, sass/site/primary/_posts-and-pages.scss */
+/* line 365, sass/site/primary/_posts-and-pages.scss */
 .home .special-container {
   margin-top: -4rem;
   z-index: -1;
   padding-top: 6rem;
 }
 
-/* line 361, sass/site/primary/_posts-and-pages.scss */
+/* line 372, sass/site/primary/_posts-and-pages.scss */
 .home .gallery-columns-4 .gallery-item {
   padding: 2rem;
   vertical-align: middle;
   max-width: 50%;
 }
 @media screen and (min-width: 54.688em) {
-  /* line 361, sass/site/primary/_posts-and-pages.scss */
+  /* line 372, sass/site/primary/_posts-and-pages.scss */
   .home .gallery-columns-4 .gallery-item {
     max-width: 25%;
     padding: 0 2rem;
   }
 }
-/* line 371, sass/site/primary/_posts-and-pages.scss */
+/* line 382, sass/site/primary/_posts-and-pages.scss */
 .home .gallery-columns-4 .gallery-item:after {
   display: none;
 }

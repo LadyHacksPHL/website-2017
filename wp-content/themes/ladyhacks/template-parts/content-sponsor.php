@@ -30,14 +30,14 @@
 						$about = get_sub_field('about');
 
 							echo "<li class='sponsor gallery-item'>";
-								echo "<div class='logo-container'>";
-									echo "<img src='$logoURL' alt='$sponsor Logo' />";
-								echo "</div>";
 								echo "<div class='sponsor-content'>";
+									echo "<div class='logo-container'>";
+										echo "<img src='$logoURL' alt='$sponsor Logo' />";
+									echo "</div>";
 										echo "<h4>$sponsor</h4>";
 										echo "<h5>$header</h5>";
 									echo "$about";
-									echo "<a href='$website'>Visit $sponsor's website</a>";
+									echo "<p><a class='sponsor-website' href='$website'>Visit $sponsor's website</a></p>";
 								echo "</div>";
 							echo "</li>";
 					endwhile;
